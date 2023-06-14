@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const router = require('./routes/routing');
-const errorLogger = require('./utilities/errorlogger');
+const errorLogger = require('./utilities/errorLogger');
 
 const cors = require("cors")
 const app = express();
