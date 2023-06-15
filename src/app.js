@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors())
 app.use(bodyParser.json());
-const ip='10.7.120.195'
+const ip='10.7.120.195';
 app.use('/', router);
 app.use(errorLogger);
 
