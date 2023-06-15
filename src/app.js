@@ -12,7 +12,7 @@ const ip='10.7.120.195';
 app.use('/', router);
 app.use(errorLogger);
 
-const port = 1050;
+const port = 8080;
 
 app.listen(port,ip,()=>{
     console.log(`Server running at http://${ip}:${port}/`);
