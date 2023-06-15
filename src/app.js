@@ -8,13 +8,16 @@ const app = express();
 
 app.use(cors())
 app.use(bodyParser.json());
-
+const ip='10.7.120.195'
 app.use('/', router);
 app.use(errorLogger);
 
+const port = 1050;
 
+app.listen(port,ip,()=>{
+    console.log(`Server running at http://${ip}:${port}/`);
 
-app.listen(1050);
+});
 console.log("Server listening in port 1050");
 
 
